@@ -3,6 +3,7 @@ Solution to brilliant problem: https://brilliant.org/daily-problems/tile-left-be
 "Which Number Doesn't Belong?"
 Math and Logic
 7/19/20
+1 hr 20 min
 '''
 
 from itertools import combinations
