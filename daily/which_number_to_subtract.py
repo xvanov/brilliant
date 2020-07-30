@@ -1,7 +1,10 @@
-# https://brilliant.org/daily-problems/subtract-square-nim/
-
-# start: 10:30
-# end: 12:20 
+url = 'https://brilliant.org/daily-problems/subtract-square-nim/'
+area = 'Math and Logic'
+title = 'Which Square to Subtract?'
+diffulty = 5
+start = '10:30'
+end = '12:20'
+time = '01:50'
 
 
 
