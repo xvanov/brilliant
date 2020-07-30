@@ -1,7 +1,8 @@
 # https://brilliant.org/daily-problems/whats-in-num/
 # difficulty = 2
 # start = 12:40
-# end = 
+# end = 13:10
+# time = 00:30
 
 from itertools import permutations
 
