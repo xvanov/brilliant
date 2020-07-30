@@ -1,0 +1,36 @@
+
+
+Sad reality is you don't have all the things you want. Even worse, others have them...
+From dawn of time people have sought to remedy the situation.
+
+
+solution 1: bartering
+simple and direct, but 
+problem: of coordination (between you and the person who has what you want)
+
+solution 2: commodity money
+furs, salt, barley
+can be used and have value (commodity = economically useful good whose units are interchangeable)
+problem: tranpsort, degradation
+
+solution 3: currency that represents the commodity
+Au, Ag
+difficult to acquire but common enough to be adopted
+solves transport and degration problem
+problem: gold rush inflation, less stability
+
+solution 4: fiat currency
+usd
+value commes from trust in government and mutual trust that everyone will accept the currency
+solves inflation and stability
+credit
+promise to pay later
+have to put trust in credit card companies to prevent fraud
+problem: central authorities can abuse, control and make profit
+
+solution 5: cryptocurrency
+difficult to control unilaterally
+solves central authority problem
+
+
+
