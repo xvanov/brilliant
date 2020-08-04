@@ -1,10 +1,9 @@
-'''
-Solution to brilliant problem: https://brilliant.org/daily-problems/tile-left-behind/
-"Which Number Doesn't Belong?"
-Math and Logic
-7/19/20
-1 hr 20 min
-'''
+url = 'https://brilliant.org/daily-problems/tile-left-behind/'
+title = "Which Number Doesn't Belong?"
+area = 'Math and Logic'
+date = '7/19/20'
+time = '1:20'
+
 
 from itertools import combinations
 
