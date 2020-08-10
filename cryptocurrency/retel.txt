@@ -5,7 +5,6 @@ Q1 History of Currency
 Sad reality is you don't have all the things you want. Even worse, others have them...
 From dawn of time people have sought to remedy the situation.
 
-
 solution 1: bartering
 simple and direct, but 
 problem: of coordination (between you and the person who has what you want)
@@ -92,9 +91,14 @@ new verification:
 publicKey = (g*s) mod n
 signature = (m*s) mod n
 
+Q4 Decentralizing Cryptonia
+- removing the dragon
+- create a tablet and distribute to everyone, tablet will have the ledger, and can verify any transaction
+- constant money supply -> deflation 
 
-
-
+Q5 Cryptonian vulnerabilities
+- if n (modulo divisor) is small, it two peaple can have the same pk
+- a transaction needs to have unique message
 
 
 

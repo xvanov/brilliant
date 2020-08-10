@@ -1,0 +1,48 @@
+url = 'https://brilliant.org/daily-problems/bug-scaling/'
+area = 'Science and Engineering'
+featured_course = 'Physics of the everyday'
+title = 'How much bigger were prehistoric bugs'
+difficulty = 4 # from 1 to 5
+start = '13:00'
+end = '13:21'
+time = '00:21'
+outcome = Correct
+
+
+known
+Rreq prop to M^(3/4) = Kleiber's law 
+
+M^(3/4) = l^(9/4)
+l = length
+
+Rreq = oxygen required per unit time = dO/dt
+M = mass of organism
+
+Rabs prop to l^2 * nO2
+
+problem
+today's longest centiped = 0.3 m
+carboniferous period 1.7 times oxygan as today
+assume conc of oxygne limiting factor on size 
+what is longest centipede in past
+
+
+solution
+
+
+Rabs = Rreq 
+
+current:
+l^2 * nO2 = l^9/4 * K
+K = l^(-1/4) * nO2
+l = 0.3
+
+past:
+l = (nO2/K)^4
+l = (1.7/(0.3^(-1/4)))^4
+
+
+
+
+
+

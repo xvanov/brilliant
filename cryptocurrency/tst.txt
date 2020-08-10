@@ -1,0 +1,58 @@
+bri-cryptocurrencies
+1/ describe latest version of the cryptocurrency system and all the problems it addresses
+2/ what are the qualities needed in decentralized cash?
+3/ what is a hash function?
+4/ what is a cryptographic hash function?
+5/ what is times8 and what is times7?
+
+
+
+1/
+- current system
+subsystem 1: dollar bill/cash
+private:
+s = secret key
+
+public:
+m = message , amount, from who, to who, transaction counter
+g = big integer
+n = big integer
+p = (g^s)%n = public key
+sig = (m*s)%n = signature
+
+verification:
+sig*
+
+
+subsytem 2: creating and keeping track of the money and transactions
+decentralized, 
+everyone has copy of ledger where each new transaction is added to
+everyone can verify new transaction
+
+
+
+problems solved: 
+- p formula (g*s)%n, also (g^s)%n: H cannot sign signature by just knowing public key
+- decentralized: no signle point of failure, not manipulation by single entity possible
+- g in formula: H cannot guess s by trial and error
+- transaction counter: every message unique
+- large n: multiple people cannot have the same p
+- modular exponentiation: H has to solve discrete logarithm problem, to get g^(-1) (if H knows g^-1 they know s%n which is equivalent to knowning s), computing g^s%n is O(log2n) but inversing the operation is O(n).
+
+current problems:
+
+
+2/ 
+- authentication
+- tamper-resistance
+
+3/
+- function that takes any size as input and outputs fixed size
+- deterministic
+
+4/ 
+- collision-resistant
+- pre-image-resistant
+
+
+
