@@ -4,7 +4,8 @@ bri-cryptocurrencies
 3/ what is a hash function?
 4/ what is a cryptographic hash function?
 5/ what is times8 and what is times7?
-
+6/ how does splitting up number into blocks, hashing separtely and then concatenating affect the overall hash
+   (assuming individaul hashings are eimple modular arithmetic)? 
 
 
 1/
@@ -54,5 +55,7 @@ current problems:
 - collision-resistant
 - pre-image-resistant
 
-
+5/ 
+R = 2^(number of registers) if binary computer
+times_f = x1*f+ x2*f^2 + ... xN*f^N mod R
 
