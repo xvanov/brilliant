@@ -1,5 +1,0 @@
-https://brilliant.org/practice/securing-hash-functions/?p=7
-https://brilliant.org/practice/hash-structures/?p=7 : very careful wording
-https://brilliant.org/practice/merkle-trees/?p=11
-https://brilliant.org/practice/inverting-hash-functions/?problem=computer-science-problem-168777
-https://brilliant.org/practice/exploring-hash-functions/?problem=computer-science-problem-168907

@@ -1,0 +1,218 @@
+bri-cryptocurrencies
+
+#### Qs ####
+1/ describe latest version of the cryptocurrency system and all the problems it addresses
+29.33.1.55.24 + 5
+2/ what are the qualities needed in decentralized cash?
+29.33.1.56.25 + 5
+3/ what is a hash function?
+29.33.1.56.25 + 5
+4/ what is a cryptographic hash function?
+29.33.1.56.25 + 5
+5/ what is times8 and what is times7?
+29.33.1.56.25 + 5
+6/ how does splitting up number into blocks, hashing separtely and then concatenating affect the overall hash
+   (assuming individaul hashings are simple modular arithmetic)? 
+29.33.1.56.25 + 5
+7/ what does collision resistance say about cracking hash?
+29.33.1.56.25 + 5
+8/ what is a linked list?
+29.33.1.56.25 + 5
+9/ what is a blockchain?
+29.33.1.56.26 + 5
+10/ what is a merkle tree?
+29.33.1.55.24 + 5
+11/ how to minimize path to deepest block in merkle tree?
+29.33.1.55.24 + 5
+12/ what is the history of money?
+
+#### mistakes ####
+
+https://brilliant.org/practice/securing-hash-functions/?p=7
+https://brilliant.org/practice/hash-structures/?p=7 : very careful wording
+https://brilliant.org/practice/merkle-trees/?p=11
+https://brilliant.org/practice/inverting-hash-functions/?problem=computer-science-problem-168777
+https://brilliant.org/practice/exploring-hash-functions/?problem=computer-science-problem-168907
+
+
+
+#### As ####
+1/
+definitions:
+- gold mine with lots of gold
+- each person can cast unique to them spell
+- dragon has:
+        1/ infallible memory
+        2/ completely trustworthy (won't take gold for himself)
+        3/ protects the gold from all thieves
+- must have qualities for currency:
+        1/ authentication
+        2/ tamper resistance
+- banknote : signed with amount and signature (spell) of user,
+                then sealed in special tamper-proof wax envolope
+
+multiplication-based crypto:
+secretKey = s
+publicKey = 5s
+message = m
+signature = ms
+
+5(siganture) = (publicKey)m
+
+multiplication, division, addition, subtraction, square, take root ....
+are simple to reverse, modulo is not (infinite possible answers)
+
+
+mod-based crupto:
+signature = (ms) mod n
+graphical viz: mod_crypto_viz
+
+only way to guess s in to do:
+
+(mt) mod n = signature for differen t until match
+
+
+s mod n = publicKey
+(ms) mod n = signature
+
+verification:
+
+(pk*m) mod n = signature = ((sk*m) mod n)*m) mod n
+(sk*m) mod n = signature
+
+problem = public key can be used for verification
+solution = publicKey = (g*s) mod n where g is known to all
+
+new verification:
+(publicKey*m) mod n = (signature * g) mod n
+publicKey = (g*s) mod n
+signature = (m*s) mod n
+
+Q4 Decentralizing Cryptonia
+- removing the dragon
+- create a tablet and distribute to everyone, tablet will have the ledger, and can verify any transaction
+- constant money supply -> deflation
+
+Q5 Cryptonian vulnerabilities
+- if n (modulo divisor) is small, it two peaple can have the same pk
+- a transaction needs to have unique message
+
+
+
+- current system
+subsystem 1: dollar bill/cash
+private:
+s = secret key
+
+public:
+m = message , amount, from who, to who, transaction counter
+g = big integer
+n = big integer
+p = (g^s)%n = public key
+sig = (m*s)%n = signature
+
+verification:
+sig*
+
+
+subsytem 2: creating and keeping track of the money and transactions
+decentralized, 
+everyone has copy of ledger where each new transaction is added to
+everyone can verify new transaction
+
+
+subsystem 3:
+message, needs to have a counter to guarantee each message is unique
+
+problems solved: 
+- p formula (g*s)%n, also (g^s)%n: H cannot sign signature by just knowing public key
+- decentralized: no signle point of failure, not manipulation by single entity possible
+- g in formula: H cannot guess s by trial and error
+- transaction counter: every message unique
+- large n: multiple people cannot have the same p
+- modular exponentiation: H has to solve discrete logarithm problem, to get g^(-1) (if H knows g^-1 they know s%n which is equivalent to knowning s), computing g^s%n is O(log2n) but inversing the operation is O(n).
+
+current problems:
+
+
+2/ 
+- authentication
+- tamper-resistance
+
+3/
+- function that takes any size as input and outputs fixed size
+- deterministic
+
+4/ 
+- collision-resistant
+- pre-image-resistant
+
+5/ 
+R = 2^(number of registers) if binary computer
+times_f = x1*f+ x2*f^2 + ... xN*f^N mod R
+
+6/
+- make it much more difficult to fin H_target by modifying x to x_new such that:
+ H(x) = H_target(x_new)
+- makes it that you can easily find one H1 but the other part is basically random
+
+7/ 
+- highly unprobable (1/number of atoms in the universe) that two inputs to hash generate same output
+
+8/
+- list in which each element has a pointer (link) to the previous element (1 root element)
+
+9/
+- linked list where in addition to link there is a hash of the prvious element
+
+10/
+- blockhain where the leaves (nodes with no link to any other node) are sensitive information (id of person) and branch contains hashes of leaves and other branches,
+one root node with one hash to the next branch.
+
+11/
+- binary tree (can be traversed in log2n)
+
+12/
+problem 1 
+Sad reality is you don't have all the things you want. Even worse, others have them...
+From dawn of time people have sought to remedy the situation.
+solution 1 
+bartering
+simple and direct
+
+problem 2 
+of coordination (between you and the person who has what you want)
+solution 2 
+commodity money
+furs, salt, barley
+can be used and have value (commodity = economically useful good for all whose units are interchangeable)
+
+problem 3 
+transport, degradation
+solution 3 
+currency that represents the commodity
+Au, Ag
+difficult to acquire but common enough to be adopted
+solves transport and degration problem
+
+problem 4 gold rush inflation, less stability
+
+solution 4 fiat currency
+usd
+value commes from trust in government and mutual trust that everyone will accept the currency
+solves inflation and stability
+credit
+
+solution 5 
+cryptocurrency
+difficult to control unilaterally
+solves central authority problem
+
+#### TODO ####
+- understand verification of public key and signature with modular exponentiation
+- when next sections available do them
+- go watch video of professor explaining blockchain
+- blokchain/crypto course
+- write own blockchain
+- learn ethereum 
+- do smart contracts and apps
