@@ -25,6 +25,10 @@ bri-cryptocurrencies
 11/ how to minimize path to deepest block in merkle tree?
 29.33.1.55.24 + 5
 12/ what is the history of money?
+29.33.1.56.25 + 5
+13/ how quickly to do modular division and how?
+14/ what is euclidean algorithm?
+15/ what is wxtended euclidean algorithm?
 
 #### mistakes ####
 
