@@ -1,14 +1,33 @@
 #### Qs ####
-1 consider system of 2 eqs, what are the possible number of sols and how to know which one it is?
-
-
+1 consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 26-57-1-33-29
+2 DOF in context of matrices?
+3 How to rref in python?
+4 How to solve system of eqs in python? 
+5 explain gaussian elimination?
 
 #### As ####
+1 
+- number of sols = 1, none, infinite
+- row multiple of another -> infinite
+- variable column multiple of another and sol column not zero -> none
 
+2
+- need as many eqs as dofs to have a chance to solve with exact solution (1 sol)
+- DOF = # of vars
 
+3
+sympy.Matrix([[],...]).rref()
+
+4
+numpy.linalg.solve(numpy.array, numpy.array)
+
+5
+write eqs in matrix form
+eliminate all vars in column except one starting from left to right
 
 #### Ms ####
-
+https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
+BAD QUESTION: step 2 can technically be done because eliminating 0 by adding 0 would count, the real problem is that zs are differnt. 
 
 
 #### TODO ####
