@@ -1,9 +1,10 @@
 #### Qs ####
-1 consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 26-57-1-33-29
-2 DOF in context of matrices?
-3 How to rref in python?
-4 How to solve system of eqs in python? 
-5 explain gaussian elimination?
+1 consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 27-58-1-33-29
+2 DOF in context of matrices? 27-58-1-33-29
+3 How to rref in python? 27-58-1-33-29
+4 How to solve system of eqs in python? 27-58-1-33-29 
+5 explain gaussian elimination? 27-58-1-33-29
+
 
 #### As ####
 1 

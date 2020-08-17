@@ -2,11 +2,13 @@ class problemMetaInfo():
     def __init__(self):
         self.url = ''
         self.area = ''
+        self.featured_course = ''
         self.title = ''
         self.difficulty = 1 # from 1 to 5
         self.start = '10:30'
         self.end = '12:20'
         self.time = '01:50'
+        self.correct = False
 
 class Problem():
 
