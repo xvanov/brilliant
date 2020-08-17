@@ -4,7 +4,9 @@
 3 How to rref in python? 27-58-1-33-29
 4 How to solve system of eqs in python? 27-58-1-33-29 
 5 explain gaussian elimination? 27-58-1-33-29
-
+6 what are the fundamental matrix operations?
+7 waht is ref?
+8 what is rref? 
 
 #### As ####
 1 
@@ -25,6 +27,11 @@ numpy.linalg.solve(numpy.array, numpy.array)
 5
 write eqs in matrix form
 eliminate all vars in column except one starting from left to right
+
+6 
+reorder rows
+multiply row by constant
+add rows
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
