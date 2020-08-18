@@ -5,8 +5,10 @@
 4 How to solve system of eqs in python? 27-58-1-33-29 
 5 explain gaussian elimination? 27-58-1-33-29
 6 what are the fundamental matrix operations?
-7 waht is ref?
+7 what is ref?
 8 what is rref? 
+9 what is Kirchoff's law?
+10 how to setup matrix to solve circuit with resistors and v source?
 
 #### As ####
 1 
@@ -32,6 +34,16 @@ eliminate all vars in column except one starting from left to right
 reorder rows
 multiply row by constant
 add rows
+
+7
+row echelon form, all 0s below each pivot
+
+8
+reduced row echelon form, all 0s above and below each pivot
+
+9
+
+
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
