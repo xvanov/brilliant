@@ -2,33 +2,25 @@ bri-cryptocurrencies
 
 #### Qs ####
 1/ describe latest version of the cryptocurrency system and all the problems it addresses
-29.33.1.55.24 + 5
 2/ what are the qualities needed in decentralized cash?
-29.33.1.56.25 + 5
 3/ what is a hash function?
-29.33.1.56.25 + 5
 4/ what is a cryptographic hash function?
-29.33.1.56.25 + 5
 5/ what is times8 and what is times7?
-29.33.1.56.25 + 5
 6/ how does splitting up number into blocks, hashing separtely and then concatenating affect the overall hash
    (assuming individaul hashings are simple modular arithmetic)? 
-29.33.1.56.25 + 5
 7/ what does collision resistance say about cracking hash?
-29.33.1.56.25 + 5
 8/ what is a linked list?
-29.33.1.56.25 + 5
 9/ what is a blockchain?
-29.33.1.56.26 + 5
 10/ what is a merkle tree?
-29.33.1.55.24 + 5
 11/ how to minimize path to deepest block in merkle tree?
-29.33.1.55.24 + 5
 12/ what is the history of money?
-29.33.1.56.25 + 5
 13/ how quickly to do modular division and how?
 14/ what is euclidean algorithm?
-15/ what is wxtended euclidean algorithm?
+15/ what is extended euclidean algorithm?
+16/ how to do modular exponentiation based verification?
+17/ how to use EEA for modular division?
+18/ how to find s mod n based on g^-1?
+19/ why is modular exponentiation pk func better then mult?
 
 #### mistakes ####
 
@@ -211,6 +203,55 @@ solution 5
 cryptocurrency
 difficult to control unilaterally
 solves central authority problem
+
+13/
+if g^-1 mod n
+O(n) if guess and check
+O(log2n) with Extended Euclidean Algorithm
+
+
+14/
+used to find gcd of 2 numbers, divide bigger by smaller, set smaller as bigger and remainder as smaller, last remainder before remainder of 0 is GCD
+
+15/
+used to find GCD and coefficients of Bezout's identity ax+by = gcd(a,b)
+
+16/
+pk = g^s % n
+sig = s^m % n
+pk^m = g^sig (mod n)
+
+
+
+17/ 
+ax + by = 1
+x = n
+y = g
+b = g^-1
+
+18/
+if g*s mod n = pk
+then s mod n = g^-1 * pk 
+
+
+
+19/ 
+mul
+pk = g*s mod n computed in O(1)
+reversing: g^-1 * g mod n = 1 computed in O(log2n) via EEA
+	and then s mod n = g^-1 * pk computed in O(1)
+
+exp
+pk = g^s mod n computed in O(log2n)
+sig = s^m mod n
+g * g  = g^2
+g^2 * g^2 = g^4
+...
+reversing to find g^-1 based on g is computed in O(n)
+pk^m = g^sig
+
+
+
 
 #### TODO ####
 - understand verification of public key and signature with modular exponentiation
