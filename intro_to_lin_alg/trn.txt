@@ -9,6 +9,9 @@
 8 what is rref? 
 9 what is Kirchoff's law?
 10 how to setup matrix to solve circuit with resistors and v source?
+11 what is being closed under addition or multiplication?
+12 what is a vector space?
+13
 
 #### As ####
 1 
@@ -42,7 +45,10 @@ row echelon form, all 0s below each pivot
 reduced row echelon form, all 0s above and below each pivot
 
 9
+sum of voltages around closed loop is zero
 
+10 
+write n equations for n unknows and put in matrix form
 
 
 #### Ms ####
