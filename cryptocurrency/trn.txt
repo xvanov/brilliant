@@ -21,6 +21,7 @@ bri-cryptocurrencies
 17/ how to use EEA for modular division?
 18/ how to find s mod n based on g^-1?
 19/ why is modular exponentiation pk func better then mult?
+20/ derive EA and EEA
 
 #### mistakes ####
 
@@ -250,7 +251,7 @@ g^2 * g^2 = g^4
 reversing to find g^-1 based on g is computed in O(n)
 pk^m = g^sig
 
-
+20/
 
 
 #### TODO ####

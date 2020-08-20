@@ -11,7 +11,9 @@
 10 how to setup matrix to solve circuit with resistors and v source?
 11 what is being closed under addition or multiplication?
 12 what is a vector space?
-13
+13 what is a subspace?
+14 what is span?
+15 what is intersction, sum and union of vector spaces?
 
 #### As ####
 1 
@@ -50,6 +52,24 @@ sum of voltages around closed loop is zero
 10 
 write n equations for n unknows and put in matrix form
 
+11
+closed under addition = if u is sol and v is sol, then u+v is also sol
+closed under scalar multipication = if u is sol, then so is cu
+
+12
+vector space 
+- associativity for add and mul: (a+b) + c = a + (b + c), a(bv) = (ab)v
+- commutatuivity for add: a+b = b+a
+- distributivity: c(u+v) = cu+cv, (a+b)v = av + bv
+- zero vector: v + 0 = v
+- for all v E -v s.t. s + (-v) = 0
+- closed under addition
+- closed under scalar multiplication
+
+13
+
+
+13
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
