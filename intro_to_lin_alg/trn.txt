@@ -1,30 +1,83 @@
 #### Qs ####
-1 consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 27-58-1-33-29
-2 DOF in context of matrices? 27-58-1-33-29
-3 How to rref in python? 27-58-1-33-29
-4 How to solve system of eqs in python? 27-58-1-33-29 
-5 explain gaussian elimination? 27-58-1-33-29
-6 what are the fundamental matrix operations?
-7 what is ref?
-8 what is rref? 
-9 what is Kirchoff's law?
-10 how to setup matrix to solve circuit with resistors and v source?
-11 what is being closed under addition or multiplication?
-12 what is a vector space?
-13 what is a subspace?
-14 what is span?
-15 what is intersction, sum and union of vector spaces?
-16 what are linearly independent vectors?
-17 what is a minimum spanning set?
-18 what is a basis?
-19 what is dimension?
-20 what is symmetric matrix?
-21 what is skew symmetric matrix?
-22 what is the relation between adding vectrospaces and intersecting in terms of dimension?
+
+
+m1 linear equations
+consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 
+m1q1 2 linear equatins in 2 unknowns
+DOF in context of matrices? 
+
+m1q2 3 unknowns
+none
+
+m1q3 gaussian elimination
+explain gaussian elimination? 
+How to rref in python? 
+How to solve system of eqs in python? 
+
+m1q4 full story of gauss
+what are the fundamental matrix operations?
+what is ref?
+what is rref? 
+
+m1q5 application: kirchoff
+what is Kirchoff's law?
+how to setup matrix to solve circuit with resistors and v source?
+
+
+m2 vector spaces
+
+m2q1 vector spaces
+what is being closed under addition or multiplication?
+what is a vector space?
+
+m2q2 subspaces and span
+what is a subspace?
+what is span?
+what is intersction, sum and union of vector spaces?
+
+m2q3 linear independence
+what are linearly independent vectors?
+what is a minimum spanning set?
+
+m2q4 basis and dimension
+what is a basis?
+what is dimension?
+
+m2q5 dot product and inner products
+what is symmetric matrix?
+what is skew symmetric matrix?
+what is the relation between adding vectrospaces and intersecting in terms of dimension?
+
+m2q6 least squares
+
+
+
+m3 properties of matrices
+
+
+
+
+
+
+m4 linear maps ^ matrices
+
+m4q1 linear transformations
+
+m4q2 properties of linear transformations
+
+m4q3 2x2 determinants 
+
+m4q4 determinants in higher dimensions
+
+m4q5 representation by a matrix
+2d rotation matrix
+# of linear transformations possible between 2 standard bases of vector spaces
 
 
 #### As ####
-1 
+m1
+
+m1q1 
 - number of sols = 1, none, infinite
 - row multiple of another -> infinite
 - variable column multiple of another and sol column not zero -> none
@@ -94,6 +147,11 @@ a set of vectors that can linearly combine to produce every vector in a vector s
 dim(V) + dim(W) = dim(V+W) + dim(VinterectionW)
 
 
+m4q5
+4.5.1 [[cθ, -sθ],[sθ,cθ]]
+4.5.2 n! where n = dimension of V.S.
+
+m4q6
 
 
 #### Ms ####
