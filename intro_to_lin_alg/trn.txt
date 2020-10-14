@@ -73,6 +73,8 @@ m4q5 representation by a matrix
 2d rotation matrix
 # of linear transformations possible between 2 standard bases of vector spaces
 
+m4q6 change of basis
+transition matrix
 
 #### As ####
 m1
@@ -152,7 +154,7 @@ m4q5
 4.5.2 n! where n = dimension of V.S.
 
 m4q6
-
+matrix that changes vector from one basis to another
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
