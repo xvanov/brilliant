@@ -75,6 +75,7 @@ m4q5 representation by a matrix
 
 m4q6 change of basis
 transition matrix
+derive similar matrix equation
 
 #### As ####
 m1
@@ -155,6 +156,24 @@ m4q5
 
 m4q6
 matrix that changes vector from one basis to another
+deriving similar matrix:
+B1 = basis 1 
+B2 = basis 2
+T(v) = w linear transformation with A1 in B1 and A2 in B2
+P = transition matrix from B2 to B1
+
+wB1 = A1vB1
+wB2 = A2vB2
+vB1 = PvB2
+wB1 = PwB2
+
+condition for A1 similar to A2:
+A2 = P^-1 * A1 * P
+
+
+
+m4q7
+
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
