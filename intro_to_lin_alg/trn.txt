@@ -95,7 +95,9 @@ none
 
 m1q3 gaussian elimination
 explain gaussian elimination? 
-How to rref in python? 
+
+sympy.Matrix([[],...]).rref()
+
 How to solve system of eqs in python? 
 
 m1q4 full story of gauss
@@ -134,10 +136,6 @@ what is the relation between adding vectrospaces and intersecting in terms of di
 
 m2q6 least squares
 
-2
-
-3
-sympy.Matrix([[],...]).rref()
 
 4
 numpy.linalg.solve(numpy.array, numpy.array)
