@@ -77,6 +77,12 @@ m4q6 change of basis
 transition matrix
 derive similar matrix equation
 
+m4q7 polynomial interpolation
+how many values needed minimum to be able to interpolate with nth degree polynomial
+formulate polynomial matrix equation, how is matrix called
+how to ensure that matrix is invertible
+2 methods to find coefficients of polynomial interpolation
+
 #### As ####
 
 m1 linear equations
@@ -215,10 +221,24 @@ wB1 = PwB2
 condition for A1 similar to A2:
 A2 = P^-1 * A1 * P
 
-
-
 m4q7
+n+1
 
+Method 1:
+Vandermonde matrix A
+Ac = y
+c = A^-1y
+A = [[1, x0, x0^2, ...],[1, x1, x1^2, ...], ...]
+c = [c0,c1, ...]
+y = [y0, y1, ...]
+A has to be invertible so:
+detA = Product(xj - xi) where 0 <= i <= j <= n
+
+Method 2: Lagrange interpolation
+give n+1 points P(xi) = yi
+compute Q0 to Qn where Qi(xi) = 1, Qi(xj) = 0
+Qi(x) = (x-x0)...(x-xn)/(xi-x0)...(xi-xn) skipping xi-xi obviously
+P = y1Q1 + y2Q2 + ...
 
 #### Ms ####
 https://brilliant.org/practice/gaussian-elimination-introduction/?p=6
