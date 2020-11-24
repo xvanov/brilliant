@@ -2,9 +2,19 @@
 
 
 m1 linear equations
+
+###
 consider system of 2 eqs, what are the possible number of sols and how to know which one it is? 
 m1q1 2 linear equatins in 2 unknowns
 DOF in context of matrices? 
+
+- number of sols = 1, none, infinite
+- row multiple of another -> infinite
+- variable column multiple of another and sol column not zero -> none
+
+- need as many eqs as dofs to have a chance to solve with exact solution (1 sol)
+- DOF = # of vars minus one for each linearly independent equation
+
 
 m1q2 3 unknowns
 none
@@ -14,15 +24,23 @@ explain gaussian elimination?
 How to rref in python? 
 How to solve system of eqs in python? 
 
+
+sympy.Matrix([[],...]).rref()
+
+###
 m1q4 full story of gauss
 what are the fundamental matrix operations?
 what is ref?
 what is rref? 
+---
+numpy.linalg.solve(numpy.array, numpy.array)
+###
 
+###
 m1q5 application: kirchoff
 what is Kirchoff's law?
 how to setup matrix to solve circuit with resistors and v source?
-
+###
 
 m2 vector spaces
 
@@ -55,10 +73,6 @@ m2q6 least squares
 m3 properties of matrices
 
 
-
-
-
-
 m4 linear maps ^ matrices
 
 m4q1 linear transformations
@@ -84,25 +98,9 @@ how to ensure that matrix is invertible
 2 methods to find coefficients of polynomial interpolation
 
 #### As ####
-
-m1 linear equations
-
-m1q1 2 linear equatins in 2 unknowns
-- number of sols = 1, none, infinite
-- row multiple of another -> infinite
-- variable column multiple of another and sol column not zero -> none
-
-- need as many eqs as dofs to have a chance to solve with exact solution (1 sol)
-- DOF = # of vars minus one for each linearly independent equation
+ 
 
 
-m1q2 3 unknowns
-none
-
-m1q3 gaussian elimination
-explain gaussian elimination? 
-
-sympy.Matrix([[],...]).rref()
 
 How to solve system of eqs in python? 
 
@@ -116,35 +114,9 @@ what is Kirchoff's law?
 how to setup matrix to solve circuit with resistors and v source?
 
 
-m2 vector spaces
-
-m2q1 vector spaces
-what is being closed under addition or multiplication?
-what is a vector space?
-
-m2q2 subspaces and span
-what is a subspace?
-what is span?
-what is intersction, sum and union of vector spaces?
-
-m2q3 linear independence
-what are linearly independent vectors?
-what is a minimum spanning set?
-
-m2q4 basis and dimension
-what is a basis?
-what is dimension?
-
-m2q5 dot product and inner products
-what is symmetric matrix?
-what is skew symmetric matrix?
-what is the relation between adding vectrospaces and intersecting in terms of dimension?
-
-m2q6 least squares
-
 
 4
-numpy.linalg.solve(numpy.array, numpy.array)
+
 
 5
 write eqs in matrix form

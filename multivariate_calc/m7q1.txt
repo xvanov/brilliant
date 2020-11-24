@@ -1,0 +1,15 @@
+qs
+1 what are the 2 types of problems in multivariate calculus?
+2 reimann sum of volume beneath z = f(x,y) > 0 on [a,b]x[c,d]
+3 volume of tetrahedron with one vertex at the origin
+
+
+as
+1 
+local problems and global problems
+local = involving information near a fiven point
+global = involving function and its domain
+2
+lim(deltax->0, deltay->0, sum(i=0,i=n,sum(j=0,j=m,deltax*deltay*f(xi,yj)))
+3 
+V = |a * (b x c)|/6 
