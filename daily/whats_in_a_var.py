@@ -7,7 +7,6 @@
 from itertools import permutations
 
 class numbersGame():
-    
     def __init__(self):
         self.mapping = {1:self.subtract, 2:self.add, 3:self.set_to_10, 4:self.square}
 

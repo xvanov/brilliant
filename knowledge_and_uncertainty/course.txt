@@ -1,0 +1,38 @@
+Os
+m1 introduction
+	q1 guess who
+	q2 find the counterfit
+
+m2 information theory
+
+m3 bayesian thinking
+
+m4
+
+Qs
+m1
+
+q1
+1 what is the most informative question?
+
+q2
+none
+
+q3 
+1 what is the fastest language?
+
+m2
+
+
+As 
+m1
+
+q1
+1 the one whose answer is most uncertain
+
+q3
+1 experimentally found that information/time is constant for all languages. but some say syllables faster:
+english has the most allowed syllables and japanese the least
+I/t = syll/t * I/syll
+English has slowest syll/t but highest I/t
+

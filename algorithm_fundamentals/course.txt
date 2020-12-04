@@ -1,0 +1,26 @@
+Os
+m1 building blocks
+	q1 pseudocode
+	q2 
+
+m2 array algorithms
+
+m3 the speed of algorithms
+
+m4 stable matching
+
+
+Qs
+m1
+
+q1
+1 what is an algorithm
+
+
+As
+m1
+
+q1
+1 instructions to reach an objective
+
+
