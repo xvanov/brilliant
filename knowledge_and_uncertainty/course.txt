@@ -2,8 +2,14 @@ Os
 m1 introduction
 	q1 guess who
 	q2 find the counterfit
+	q3 most efficient language
+	q4 information decreases uncertainty
 
 m2 information theory
+	q1 measuring uncertainty
+	q2
+	q3 entropy
+	q4 compression
 
 m3 bayesian thinking
 
@@ -14,6 +20,7 @@ m1
 
 q1
 1 what is the most informative question?
+2 how to explain information and uncertainty to someone?
 
 q2
 none
@@ -23,16 +30,34 @@ q3
 
 m2
 
+q1
+none
 
+q2
+1 what is relationship between missing information and proabability 
+2 what is entropy and why?
+
+q3
+1 what does entropy measure?
 As 
 m1
 
 q1
 1 the one whose answer is most uncertain
+2 16 suspects: 1/2 squares, 1/2 striped, 1/2 hats, 1/2 glasses
 
 q3
 1 experimentally found that information/time is constant for all languages. but some say syllables faster:
 english has the most allowed syllables and japanese the least
 I/t = syll/t * I/syll
 English has slowest syll/t but highest I/t
+
+m2
+
+q2
+1 p = 1/2^n; n = missing information/number of questions need to ask; n = -log2(p)
+2 = -sum(plog2(p))
+
+q3
+1 the approx number of maximally informative questions (per coin) needed to guess the outcome of n coin flips
 
