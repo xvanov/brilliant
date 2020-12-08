@@ -10,9 +10,10 @@ m2 information theory
 	q2
 	q3 entropy
 	q4 compression
+	q5 a trit of information
 
 m3 bayesian thinking
-
+	q1 a medical examination
 m4
 
 Qs
@@ -39,6 +40,19 @@ q2
 
 q3
 1 what does entropy measure?
+
+q5 
+1 does a maximally inforamtive trinary question have the same, more or less information than a maximally informative binary question?
+2 how to solve N coin weighing problem?
+3 how many bits is a trit?
+
+m3 
+q1
+
+1 what is bayes's rule
+
+
+
 As 
 m1
 
@@ -60,4 +74,19 @@ q2
 
 q3
 1 the approx number of maximally informative questions (per coin) needed to guess the outcome of n coin flips
+
+q5
+1 trit has more information than bit
+2 always weigh s.t. you get almost3 equal (max off by 1) groups.
+3 B = T*log2(3) B = 1.6T
+
+m3
+q1
+1 p(a|b)*p(b) = p(b|a)*p(a)
+
+
+
+
+
+
 
