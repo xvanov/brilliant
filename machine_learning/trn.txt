@@ -1,0 +1,8 @@
+m4q5
+q1 	what is the error/cost function of SVM/LogReg?
+a1 	SVM: SUMi { max(0, 1-yi(w*xi-b)) - lambda*||w||^2 }
+	LogReg: ln(1+e^(-w*x+b))
+q2	Does SVM or LogReg have smaller error when a hyperplane perfectly divides 2 classes?
+a2	SVM = 0 error
+q3  how to find margin if we put some max error for log reg?
+a3	ln(1+e^-Q) = Emax; Q = -ln(e^Emax -1); margin = 2Q/||w||
