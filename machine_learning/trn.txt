@@ -6,3 +6,26 @@ q2	Does SVM or LogReg have smaller error when a hyperplane perfectly divides 2 c
 a2	SVM = 0 error
 q3  how to find margin if we put some max error for log reg?
 a3	ln(1+e^-Q) = Emax; Q = -ln(e^Emax -1); margin = 2Q/||w||
+q4  SVM or LogReg for hares vs rabbits classifier?
+a4	hares and rabbits are very similar -> log reg can handle overlap better so logreg is better
+
+m5q1
+q1  how similar are two vectors x an y?
+a1  depends on measure, ex: dot product, e^(-||x*y||^2)
+q2  what is a kernel
+a2  a function that defines the similarity between two vectors: k(x,y) = F(x)*F(y) = any inner product in a feature space
+q3  what is a feature space?
+a3  the space of all possible features, e.g. [h,w] for height and weight
+q4  k1 ^ k2 is kernel ->? k3 = k1+k2 is kernel
+a4  F1(x)*F1(y) + F2(x)*F2(y) = [F1(x), F2(x)] + [F1(y) + F2(y)] = F1nF2(x) + F1nF2(y) where n := concatenate = F3(x) + F3(y) -> k1+k2 is a kernel
+q5  what are the properties of kernels?
+a5  symmetry: k(x,y) = k(y,x); non-negativity: k(x,x) >= 0; cauchy-shwarz inequality: k(x,y) <= [k(x,x)*k(y,y)]^(1/2)
+q6  how can i determine if a function is a kernel?
+a6  split into nomials and each has to have both x and y
+q7  what are the kernels: linear, radial, laplacian, polynomial
+a7  linear = x*y; radial = e^(-||x-y||); laplacian = e^(-||x-y||^2/2*variance); polynomial = (x*y+r)^n
+
+
+
+
+
