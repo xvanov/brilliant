@@ -17,6 +17,8 @@ def find_ev(R1, R2, N):
             c1 +=1
     return c1/N
 
+
+
 if __name__ == "__main__":
     R1 = (1,5)
     R2 = (1,10)
