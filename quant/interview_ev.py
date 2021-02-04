@@ -35,7 +35,7 @@ def sim_ev():
     for i in range(N):
         vertices = [0,1,2,3]
         visited = [0]
-        N_distinct = 3
+        N_distinct = 4
         ss.append(sim(N_distinct, vertices, visited))
     s = sum(ss)/len(ss)
     print(s)
