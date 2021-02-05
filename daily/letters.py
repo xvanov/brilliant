@@ -1,7 +1,8 @@
+def sum_of_letters(w1, w2, r):
+   pass 
 
 
-
-if __name__ == '__main__':
+def mul_of_letters(w1, w2, r):
     r = 0
     T = 10
     for B in range(T):
@@ -20,3 +21,7 @@ if __name__ == '__main__':
                         print(n2)
                         print(r)
 
+
+
+
+if __name__ == '__main__':

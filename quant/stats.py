@@ -10,6 +10,7 @@ v3 = np.var(sample3)
 print(v1, v2, v1*4, v1*4 == v2)
 print(v1,v3,v1==v3)
 
+
 def discrete_var(l,p):
     v = 0
     e = 0
@@ -33,4 +34,33 @@ p5 = [1/N]*N
 v5 = np.var(np.array(sample5))
 v5m = discrete_var(sample5,p5)
 print(v5,v5m)
+
+N = 1000
+sumTheResult = []
+twoTimesValue = []
+for i in range(N):
+    q = random.randint(1,6)
+    s = random.randint(1,6)
+    sumTheResult.append(q+s)
+    twoTimesValue.append(2*q)
+
+v6 = np.var(np.array(sumTheResult))
+v6_2 = np.var(np.array(twoTimesValue))
+print(v6,v6_2)
+
+
+N = 1000000
+result = []
+for i in range(N):
+    f = random.randint(0,1)
+    if f == 0:
+        q = random.randint(1,6)
+    else:
+        q = random.randint(1,4)
+
+    result.append(q)
+
+
+v7 = np.var(np.array(result))
+print(v7)
 
