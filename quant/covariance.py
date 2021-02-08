@@ -8,6 +8,10 @@ def covarfn(a, b, av_a, av_b):
         cov += (a[i] - av_a) * (b[i] - av_b)
     return (cov / (len(a)))  # divide by N-1
 
+def cov_sum(a,b):
+    var_ab = np.var(a) + np.var(b) + 2*np.cov(a,b,bias=True)
+    return var_ab
+
 def my_npcov(a,b):
     a_m = np.mean(a)
     b_m = np.mean(b)
@@ -63,3 +67,7 @@ print(npcov)
 
 mycov = my_npcov(X2,X)
 print(mycov)
+
+cov_ab = cov_sum(X2,X)
+print('sum of x2 and x vars', cov_ab)
+
