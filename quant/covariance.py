@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 def covarfn(a, b, av_a, av_b):
     cov = 0
@@ -6,6 +7,13 @@ def covarfn(a, b, av_a, av_b):
     for i in range(0, len(a)):
         cov += (a[i] - av_a) * (b[i] - av_b)
     return (cov / (len(a)))  # divide by N-1
+
+def my_npcov(a,b):
+    a_m = np.mean(a)
+    b_m = np.mean(b)
+    cov = np.dot((a - a_m), (b-b_m))/a.size
+    return cov
+
 
 def covariance(X,Y):
     '''
@@ -38,3 +46,20 @@ ocov = covarfn(X,Y,ev_X,ev_Y)
 print('my covariance', cov)
 print('np covariance', npcov)
 print('other covariance', ocov)
+
+
+N = 10000
+rolls = [random.randint(1,7) for i in range(N)]
+rolls = [*range(1,7)]
+rolls2 = [r**2 for r in rolls]
+cov = covariance(rolls, rolls2)
+print('my covariance', cov)
+
+X = np.arange(1,7)
+X2 = X**2
+npcov = np.cov(X2, X, bias=True)
+print(npcov)
+
+
+mycov = my_npcov(X2,X)
+print(mycov)
