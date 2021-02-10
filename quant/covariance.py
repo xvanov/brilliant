@@ -71,3 +71,16 @@ print(mycov)
 cov_ab = cov_sum(X2,X)
 print('sum of x2 and x vars', cov_ab)
 
+N = 1000
+stks = []
+for i in range(N):
+    c = random.choice([1,2,3])
+    stk = [1 if random.choice([1,2,3])==3 else 0 for i in range(10)]
+    U = sum(stk)
+    D = len(stk) - U
+    stks.append((U,D))
+U = [p[0] for p in stks]
+D = [p[1] for p in stks]
+stk_cov = np.cov(np.array(U), np.array(D), bias=True)
+
+print(stk_cov)
