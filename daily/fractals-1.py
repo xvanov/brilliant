@@ -1,30 +1,28 @@
-def fractal_area(fractal, diff, side):
-    # init
-    side = side*fractal
-    total = side**2
-    diffTmp = total
-    i = 1
-    # loop
-    while diffTmp > diff:
-        prev = total
-        side = side*fractal
-        area = side**2
-        total += (2*i)*area
-        diffTmp = total-prev
-        i+=1
-    return total
 
+class Problem():
+
+    def __init__(self, url):
+        self.url = ''
+
+    def solve_sim(self):
+        solution = 0
+        side = 2**0.5
+        solution = self.recur(side)
+        return solution
+
+    def recur(self, side):
+        if side < 0.0001:
+            return 0
+        else:
+            return (side/2)**2 + 2*self.recur(side/2)
+
+    def solve_analytic(self):
+        pass
 
 if __name__ == '__main__':
-    fractal = 1/2
-    sides = [1, 2**0.5, 2, 2*2**0.5]
-    diff = 10**-10
-    for s in sides:
-        total = fractal_area(fractal,diff,s)
-        area = s**2
-        print('Side = ', s)
-        print('Colored Area = ', total)
-        print('Total Area = ', area)
-        print('Colored/Total = ', total/area)
-        print(' ')
+    # define problem inputs
+    url = 'https://brilliant.org/daily-problems/fractals-1/'
 
+    p = Problem(url)
+    solution = p.solve_sim()
+    print(solution)
