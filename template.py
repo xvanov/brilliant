@@ -1,7 +1,7 @@
 
 class Problem():
     def __init__(self, url):
-        self.url = ''
+        self.url = url
 
     def solve(self):
         solution = 0
@@ -9,7 +9,8 @@ class Problem():
 
 
 if __name__ == '__main__':
-   # define problem inputs
-   p = Problem()
-   solution = p.solve()
-   print(solution)
+    url = ''
+    # define problem inputs
+    p = Problem(url)
+    solution = p.solve()
+    print(solution)
