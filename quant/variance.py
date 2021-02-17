@@ -49,7 +49,7 @@ v6_2 = np.var(np.array(twoTimesValue))
 print(v6,v6_2)
 
 
-N = 1000000
+N = 1000
 result = []
 for i in range(N):
     f = random.randint(0,1)
@@ -64,3 +64,29 @@ for i in range(N):
 v7 = np.var(np.array(result))
 print(v7)
 
+# variance of number of heads in 10 flips
+N = 10000
+result = []
+for i in range(N):
+    f = [random.randint(0,1) for j in range(10)]
+    result.append(sum(f))
+
+result = np.var(np.array(result)) # ddof=9
+print(result)
+
+
+# variance of number of two consecutive heads in 10 flips
+N = 10000
+result = []
+for i in range(N):
+    f = [random.randint(0,1) for j in range(10)]
+    n = 0
+    prev = 0
+    for v in f:
+        if v == 1 and prev == 1:
+            n+=1
+        prev = v
+    result.append(n)
+
+result = np.var(np.array(result)) # ddof=9
+print(result)
