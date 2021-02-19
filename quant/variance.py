@@ -40,7 +40,7 @@ v5 = np.var(np.array(sample5))
 v5m = discrete_var(sample5, p5)
 print(v5, v5m)
 
-N = 1000
+N = 100
 sumTheResult = []
 twoTimesValue = []
 for i in range(N):
@@ -54,7 +54,7 @@ v6_2 = np.var(np.array(twoTimesValue))
 print(v6, v6_2)
 
 
-N = 1000
+N = 100
 result = []
 for i in range(N):
     f = random.randint(0, 1)
@@ -70,7 +70,7 @@ v7 = np.var(np.array(result))
 print(v7)
 
 # variance of number of heads in 10 flips
-N = 10000
+N = 100
 result = []
 for i in range(N):
     f = [random.randint(0, 1) for j in range(10)]
@@ -80,7 +80,7 @@ result = np.var(np.array(result))  # ddof=9
 print(result)
 
 # variance of number of two consecutive heads in 10 flips
-N = 10000
+N = 100
 result = []
 for i in range(N):
     f = [random.randint(0, 1) for j in range(10)]
@@ -93,4 +93,15 @@ for i in range(N):
     result.append(n)
 
 result = np.var(np.array(result))  # ddof=9
+print(result)
+
+# variance the number of stocks that will increase in price of 5 stocks
+N = 100000
+result = []
+for i in range(N):
+    f = [random.randint(0, 1) for j in range(5)]
+    result.append(sum(f))
+
+print(len(result))
+result = np.var(np.array(result))
 print(result)
