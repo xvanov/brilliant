@@ -95,13 +95,41 @@ for i in range(N):
 result = np.var(np.array(result))  # ddof=9
 print(result)
 
-# variance the number of stocks that will increase in price of 5 stocks
-N = 100000
+# price of stock increases with pI=1/3 and deacreases with pD=2/3
+# variance of number that will increase of 5 independent stocks
+N = 10000
 result = []
-for i in range(N):
-    f = [random.randint(0, 1) for j in range(5)]
-    result.append(sum(f))
+sims = [[random.randint(0, 2) for j in range(5)] for i in range(N)]
+result = [s.count(0) for s in sims]
 
 print(len(result))
 result = np.var(np.array(result))
 print(result)
+
+
+# price of stock increases with pI=1/3 and deacreases with pD=2/3
+# variance of number that will increase of 5 independent stocks on 3 days
+N = 1
+result = []
+sims = []
+for i in range(N):
+    days3 = [[random.randint(0,2) for j in range(5)] for day in range(3)]
+    equals = days3[0]
+    print(days3)
+    truths = [1,1,1]
+    for j in range(3):
+        if equals !=0:
+            truths[j] = 0
+    for j in range(1,3):
+        for k in range(3):
+            if days3[j][k] != equals[k]:
+                truths[k] = 0
+    print(truths)
+    c = sum(truths)
+    sims.append(c)
+
+result = sims
+print(len(result))
+result = np.var(np.array(result))
+print(result)
+
