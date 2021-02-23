@@ -109,27 +109,65 @@ print(result)
 
 # price of stock increases with pI=1/3 and deacreases with pD=2/3
 # variance of number that will increase of 5 independent stocks on 3 days
-N = 1
+N = 10**2
 result = []
 sims = []
 for i in range(N):
     days3 = [[random.randint(0,2) for j in range(5)] for day in range(3)]
     equals = days3[0]
-    print(days3)
-    truths = [1,1,1]
+    #print(days3)
+    truths = [1,1,1,1,1]
     for j in range(3):
-        if equals !=0:
-            truths[j] = 0
-    for j in range(1,3):
-        for k in range(3):
-            if days3[j][k] != equals[k]:
+        for k in range(5):
+            if days3[j][k] != 0:
                 truths[k] = 0
-    print(truths)
+    #print(truths)
+    #print(sum(truths))
     c = sum(truths)
     sims.append(c)
 
-result = sims
-print(len(result))
-result = np.var(np.array(result))
-print(result)
+print('Number of sims: ', len(sims))
+result = np.var(np.array(sims))
+print('Simulation Variance = ', result)
 
+# analytical sol
+nDays = 3
+incProb = 1/3
+nStocks = 5
+inc3Days = incProb**nDays
+binomialVar = nStocks*(inc3Days)*(1-inc3Days)
+print('Analytical Variance = ', binomialVar)
+
+# minimum number of stocks to hold such that the variance is at least 1
+
+simVar = 0
+result = []
+simNStocks = 5
+nDays = 3
+while simVar < 1:
+    sims = []
+    N = 10**2
+    for i in range(N):
+        days3 = [[random.randint(0,2) for j in range(simNStocks)] for day in range(nDays)]
+        truths = [1]*simNStocks
+        for j in range(nDays):
+            for k in range(simNStocks):
+                if days3[j][k] != 0:
+                    truths[k] = 0
+        c = sum(truths)
+        sims.append(c)
+
+    simVar = np.var(np.array(sims))
+    simNStocks +=1
+
+print('Simulation variance = ', simVar)
+print('Simulation number of stocks = ', simNStocks)
+
+# analytical sol
+nDays = 3
+incProb = 1/3
+nStocks = 5
+inc3Days = incProb**nDays
+binomialVar = 1
+nStocks = binomialVar/((inc3Days)*(1-inc3Days))
+print('Analytical number of stocks = ', nStocks)
