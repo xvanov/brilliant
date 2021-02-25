@@ -15,7 +15,7 @@ def discrete_var(listOfNumbers, listOfProbabilities):
     v -= e**2
     return v
 
-
+'''
 sample = np.array([2.74, 1.23, 2.63, 2.22, 3, 1.98])
 v1 = np.var(sample)
 sample2 = sample*2
@@ -39,7 +39,9 @@ p5 = [1/N]*N
 v5 = np.var(np.array(sample5))
 v5m = discrete_var(sample5, p5)
 print(v5, v5m)
+'''
 
+'''
 N = 100
 sumTheResult = []
 twoTimesValue = []
@@ -52,8 +54,9 @@ for i in range(N):
 v6 = np.var(np.array(sumTheResult))
 v6_2 = np.var(np.array(twoTimesValue))
 print(v6, v6_2)
+'''
 
-
+'''
 N = 100
 result = []
 for i in range(N):
@@ -68,8 +71,10 @@ for i in range(N):
 
 v7 = np.var(np.array(result))
 print(v7)
+'''
 
 # variance of number of heads in 10 flips
+'''
 N = 100
 result = []
 for i in range(N):
@@ -78,9 +83,11 @@ for i in range(N):
 
 result = np.var(np.array(result))  # ddof=9
 print(result)
+'''
 
 # variance of number of two consecutive heads in 10 flips
-N = 100
+'''
+N = 10**4
 result = []
 for i in range(N):
     f = [random.randint(0, 1) for j in range(10)]
@@ -92,23 +99,23 @@ for i in range(N):
         prev = v
     result.append(n)
 
-result = np.var(np.array(result))  # ddof=9
-print(result)
-
+result = np.var(np.array(result))
+print('variance of 2 consecutive heads in 10 flips = ', result)
+'''
 # price of stock increases with pI=1/3 and deacreases with pD=2/3
 # variance of number that will increase of 5 independent stocks
+'''
 N = 10000
 result = []
 sims = [[random.randint(0, 2) for j in range(5)] for i in range(N)]
 result = [s.count(0) for s in sims]
 
-print(len(result))
 result = np.var(np.array(result))
 print(result)
-
-
+'''
 # price of stock increases with pI=1/3 and deacreases with pD=2/3
 # variance of number that will increase of 5 independent stocks on 3 days
+'''
 N = 10**2
 result = []
 sims = []
@@ -137,9 +144,10 @@ nStocks = 5
 inc3Days = incProb**nDays
 binomialVar = nStocks*(inc3Days)*(1-inc3Days)
 print('Analytical Variance = ', binomialVar)
+'''
 
 # minimum number of stocks to hold such that the variance is at least 1
-
+'''
 simVar = 0
 result = []
 simNStocks = 5
@@ -171,3 +179,31 @@ inc3Days = incProb**nDays
 binomialVar = 1
 nStocks = binomialVar/((inc3Days)*(1-inc3Days))
 print('Analytical number of stocks = ', nStocks)
+'''
+
+# variance of number of 2 heads occuring
+
+# sim
+N = 10**5
+sims = []
+for i in range(N):
+    flips = [random.randint(0, 1) for j in range(10)]
+    n = 0
+    prev = 0
+    for v in flips:
+        if v == 1 and prev == 1:
+            n += 1
+        prev = v
+    sims.append(n)
+
+simVar = np.var(np.array(sims))
+simMean = np.mean(np.array(sims))
+print('simulation variance of 2 consecutive heads = ', simVar)
+print('simulation expected value of 2 consecutive heads = ', simMean)
+# analytic
+p = 1/4
+n = 9
+binVar = n*p*(1-p)
+binMean = n*p
+print('analytical variance of 2 consecutive heads = ', binVar)
+print('analytical expected value of 2 consecutive heads = ', binMean)
