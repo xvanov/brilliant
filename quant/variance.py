@@ -184,7 +184,7 @@ print('Analytical number of stocks = ', nStocks)
 # variance of number of 2 heads occuring
 
 # sim
-N = 10**5
+N = 10**6
 sims = []
 for i in range(N):
     flips = [random.randint(0, 1) for j in range(10)]
@@ -198,12 +198,20 @@ for i in range(N):
 
 simVar = np.var(np.array(sims))
 simMean = np.mean(np.array(sims))
-print('simulation variance of 2 consecutive heads = ', simVar)
-print('simulation expected value of 2 consecutive heads = ', simMean)
 # analytic
 p = 1/4
 n = 9
-binVar = n*p*(1-p)
 binMean = n*p
-print('analytical variance of 2 consecutive heads = ', binVar)
-print('analytical expected value of 2 consecutive heads = ', binMean)
+binVar = n*p - (n*p)**2 + (n-1)*(n-2)*(p**2) + 2*(n-1)*p*1/2
+
+
+# print
+print('X = indicator variable for count of 2 consecutive heads in 10 throws')
+print('simMean = ', simMean)
+print('anaMean = ', binMean)
+print('simVar = ', simVar)
+print('anaVar = ', binVar)
+# expected value of indicator variable squared
+# X = indicator variable, E(X) = p
+# since an indicator variable X takes only values 0 v 1 X = X^2
+# E(X) = E(X^2)
