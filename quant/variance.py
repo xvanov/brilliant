@@ -182,7 +182,7 @@ print('Analytical number of stocks = ', nStocks)
 '''
 
 # variance of number of 2 heads occuring
-
+'''
 # sim
 N = 10**6
 sims = []
@@ -211,7 +211,41 @@ print('simMean = ', simMean)
 print('anaMean = ', binMean)
 print('simVar = ', simVar)
 print('anaVar = ', binVar)
+'''
 # expected value of indicator variable squared
 # X = indicator variable, E(X) = p
 # since an indicator variable X takes only values 0 v 1 X = X^2
 # E(X) = E(X^2)
+
+# 1 stock or 25 stocks
+
+# problem
+s1 = 750
+n1 = 1
+m1 = 0.03
+
+s2 = 30
+n2 = 25
+m2 = 0.03
+std2 = 0.015
+
+# find std1
+
+# analytical
+std1_ana = (n2*s2*std2**2)**0.5/s2
+print('analytic combined standard deviation = ', std1_ana)
+
+# simulation
+N = 10**4
+
+stds = []
+for i in range(N):
+    samples = np.random.normal(m2*s2, scale=std2*s2, size=n2)
+    stds.append(np.std(samples))
+
+std1_sim = np.mean(stds)/s2
+print('simulation combined standard deviation = ', std1_sim)
+# programmatic
+
+std1_prg = 0
+print('programmatic combined standard deviation = ', std1_prg)
