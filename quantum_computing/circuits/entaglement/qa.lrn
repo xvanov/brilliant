@@ -1,0 +1,17 @@
+q
+1 why is entaglement important
+2 what is the bell state
+3 can we use single qubit gates to reach the bell state
+4 how to get to bell state (multiple ways)
+5 what is reversible gate way to get to bell state
+
+a
+1 entaglement allows us to be from N possible states at one time to 2^N possible states at one time (N = number of qubits)
+2 (|00> + |11>)/sqrt(2)
+3 no, write out a cross product of two qubits (the only way to combine qubits is using a cross product), applying a gate to a singel one will never enable reaching the bell state because 2 coeffs will have to be 0
+4 start from H|0> x |0> and using a gate that takes in both qubits at once and changes one based on the other: 
+	- if q1 == 1: set q2 = !q2
+	- if q1 != q2: set q2 = !q2
+5 second way above is not reversible; reversible is that you can apply the same gate twice to negate its effect; first way above is reversible (CNOT, CX)
+
+
