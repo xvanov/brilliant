@@ -1,0 +1,23 @@
+q
+1 what are ways to make a neutron
+2 how would a neutron fly when ejected from a thermonuclear oven
+3 how would the trajectory of the neutron be affected if it was flying through two bars one positive an one negative forming a magnetic field B
+4 why is it deflected
+5 what is the interaction energy between magnetic field and neutron
+6 what is the magnitude of the force between the neutron and magnetic field
+7 how would a second neutron flying through magentic field behave
+8 how would we describe the distribution of many neutrons
+9 why do we not observe quantum effects on macroscopic objects
+
+a
+1 fission or fusion
+2 in straight line (drag and gravity would have very little effect due to the speed of the object)
+3 classical expectation: unaffected
+  quantum reality: it gets deflected
+4 spin magnetic moment mu proportional to S (magnetic moment)
+5 U = -S * B 
+6 F = dU/dz, |F| = d/dz(|S||B|cos(theta))
+7 random deflection up or down
+8 classical expectation: normal distribution around 0
+  quantum reality: up or down
+9 quantum effect average out in macroscopic objects
