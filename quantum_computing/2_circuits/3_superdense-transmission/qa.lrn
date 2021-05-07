@@ -1,0 +1,20 @@
+q
+B can we use entaglement to send more than one bit of information in a qubit?
+1 how much information is involved in specifying a single qubit
+2 how much information can be extracted through measuring an entangled qubit
+3 what state is formed when applying X to the bell state
+4 can you determine the bit of information formed by aplying (or not applying) X with one measurement
+5 how to unentangle qubit states
+6 what does |00> - |11> become after applying cnot
+7 how to encode and decode qubits
+
+a
+B we can send 2 bits of information in a qubit by having entabgled qubits (1 on each side) 
+1 infinite bits
+2 2 bits
+3 (|01> + |10>)/sqrt(2)
+4 no, by measuring only one qubit you can not discern the other
+5 cnot
+6 |-> x |0>
+7 I, X, Z, XZ for encoding (encodes 2 bits)
+  cnot for decoding (unentangles result)
