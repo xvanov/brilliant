@@ -1,0 +1,15 @@
+q
+1 when was spin observed
+2 what is SG-analyzer
+3 what are kets
+4 what is mean squared deviation
+5 how will particles be output from 2 SG analyzers in series
+6 how will particles be output from 2 SG analyzers in series, where one is flipped
+a
+1 1922, otto stern and walter gerlach
+2 input for incoming particles, and a magnetic field that outputs them based on their interaction with it.
+3 a way of referring to state of a particle |up> |down>, |psi>
+4 MSE = MSD = 1/n*sum(y_i - y_hati)^2
+5 they will maintain their orientation
+6 they will come out of the opposite output (maintaining their orientaion)
+
