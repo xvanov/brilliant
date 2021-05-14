@@ -1,0 +1,18 @@
+q
+1 what is an observable
+2 what is preparing a state
+3 what happens when we shoot particle through one sg_z analyzer and then sg_z analyzer
+4 why does (3) occur
+5 what would be the probabilty of observing a particle compinf out of sg analuzer in 1 if it is rotated by theta from z to x
+6 what happens when particle is shot through sg_z (up), sg_x (right), sg_z
+7 difference between classical measurement and quantum measurement
+
+a
+1 dynamic variable that can be measured
+2 running particle through sg analyzer that is in some rotation to the x,y and z axes
+3 we expect that the particle will be prpared in up or down and then be undeflected, but we observe that the particle goes 50/50 left and right
+4 because physical quantities of quantum object have certain allowed quantities and 0 isn't one of them
+5 avg deflection = cos(theta) "classical limit"
+6 we expect it will be (up), but it is 50/50 (measuring spin along one axis destroys all previous knowledge)
+7 sometimes measuring a quantum state cahn change that state for all future measurments
+
