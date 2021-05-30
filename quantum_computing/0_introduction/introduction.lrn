@@ -15,8 +15,11 @@ q
 2 what happens when playing plinko with 2 photons simultaneously?
 3 how to predict end state of qunatum obect
 4 to calculate interference between 2 photons it takes t seconds. how long to calulate the photon distribution in a 3-layer quantum game of plinko? 
+5 what advantage to building a photon plinko over computing it?
 
 a
-1 middle
+1 game where you drop ball, and there are 3 buckets it can fall to by being deflected by obstacles, middle
 2 destructive and constructive interferece
-3 account for all path it could have taken to get there
+3 account for all paths it could have taken to get there
+4 how many paths are there? - count the last layer of the plinko - it reveals the patter 2^N (N = number of paths in bottom layer) (2^N) * t N = 2n, n = number of layers
+5 if it takes tq for a photon to traverse one layer it will complete one plinko game in n*tq, so just repeat this K times K*n*tq is probably faster than 2^(2n)
