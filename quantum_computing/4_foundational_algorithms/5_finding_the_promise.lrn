@@ -3,4 +3,5 @@ q
 c: 
 2 what is bernstein-vazirani (bv) black-box?
 c: define
-3 
+3 what is the minimum number of classical queries needed to solve the bv black box?
+c: proof for general case
