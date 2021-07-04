@@ -5,3 +5,5 @@ c:
 c: define
 3 what is the minimum number of classical queries needed to solve the bv black box?
 c: proof for general case
+4 how to tackle the bv problem with a quantum computation?
+c: sketch solution apporach 
