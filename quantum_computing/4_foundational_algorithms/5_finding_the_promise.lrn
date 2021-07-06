@@ -1,9 +1,9 @@
 q
 1 how to find a hidden pattern in a multi-bit output function (e.g. prime number search)?
-c: 
+c 
 2 what is bernstein-vazirani (bv) black-box?
-c: define
+c define
 3 what is the minimum number of classical queries needed to solve the bv black box?
-c: proof for general case
+c proof for general case
 4 how to tackle the bv problem with a quantum computation?
-c: sketch solution apporach 
+c sketch solution apporach, solution algebra, quantum circuit
