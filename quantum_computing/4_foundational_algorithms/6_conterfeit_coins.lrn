@@ -3,5 +3,11 @@ q
 c problem and solution classically
 2 describe variations of counterfeit coins and balance problem
 c 2x2 = 4 scenarios, 2 questions
-
-
+3 turn counterfeit count problem to quantum 
+c setup of problem
+4 how to solve the problem with quantum
+c full solution
+5 why do we need a target register
+c explanation
+6 why do we setup the target and register bits the way we do
+c explantion
