@@ -1,27 +1,46 @@
-namespace Brilliant {
+mespace Brilliant {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
-    
+    open Microsoft.Quantum.Math;
+
     operation QuantumMain() : Unit {
         using ( (query, target) = (Qubit[5], Qubit()) ) { 
-            // The state begins as x = |00000>, y = |0>
+            // The state begins as query = |00000>, target = |0>
             
-            // Prepare quuery and target for phase query
+            // Prepare query and target for phase query
             StatePreparation(query, target);
             
             // Apply an Oracle using query and target.
             BVOracle(query, target);
             
+            // Decode the string from the query qubits.
+            DecodeString(query);
+            
             MeasureAndMessage(target);
             ResetAll(query); Reset(target);
         }
     }
+    operation DecodeString(query : Qubit[]) : Unit {
+        // Decode the string a from the query qubits.
+        mutable a = new Result[5];
+        for (i in 0..4) {
+            H(query[i]);
+            Message($"Decoded String {i}: {M(query[i])}");
+        }
+    }
     operation StatePreparation(query : Qubit[], target : Qubit) : Unit {
         // Prepare qubits for phase query.
+        for (i in 0 .. 4) {
+            H(query[i]);
+        }
+        X(target); 
+        H(target);
     }
     operation BVOracle(query : Qubit[], target : Qubit) : Unit {
         // Define string a
-        let a = [1, 0, 0, 1, 0];
+        //let a = [RandomInt(2), RandomInt(2), RandomInt(2), RandomInt(2), RandomInt(2)];
+        let a = [1, 1, 1, 1, 1];
+        Message($"String a: {a}");
             
         // Output |x, y + a.x mod 2>
         for (i in 0 .. 4) {
