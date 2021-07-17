@@ -1,0 +1,27 @@
+q
+v the promised bits
+1 how to find a hidden pattern in a multi-bit output function (e.g. prime number search)?
+2 what is bernstein-vazirani (bv) black-box?
+3 what is the minimum number of classical queries needed to solve the bv black box?
+4 how to tackle the bv problem with a quantum computation?
+vi counterfeit coins redux
+5 describe counterfeit coins and balance problem
+6 describe variations of counterfeit coins and balance problem
+7 turn counterfeit count problem to quantum 
+8 how to solve the problem with quantum
+9 why do we need a target register
+10 why do we setup the target and register bits the way we do
+
+c
+v the promised bits
+1
+2 define
+3 proof for general case
+4 sketch solution apporach, solution algebra, quantum circuit
+vi counterfeit coins redux
+5 problem and solution classically
+6 2x2 = 4 scenarios, 2 questions
+7 setup of problem
+8 full solution
+9 explanation
+10 explanation
