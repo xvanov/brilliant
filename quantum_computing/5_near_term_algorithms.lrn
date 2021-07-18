@@ -8,6 +8,7 @@ i inspired by nature
 ii spin systems
 6 represent energy of spins in same neighborhood
 7 represent energy of single spin under global neighborhood
+8 constraint on spins and outcome
 
 c
 i inspired by nature
@@ -19,3 +20,4 @@ i inspired by nature
 ii spin systems
 6 derive expression
 7 derive expression
+8 three expressions together and their outcome
