@@ -1,0 +1,26 @@
+q
+v unitary transformations
+1 how to access all quantum states starting from |0> v |1>
+vi universal gate set
+2 what is universal gate set?
+3 what is a universal gate set for classical computers?
+4 with what gates is it possible to construct n-bit universal computer?
+5 is X gate 1-qubit universal?
+6 what is the minimum number of coefficients needed to describe a quantum state
+7 how to rotate about horizontal and vertical axes on bloch sphere?
+8 what are the gates that can reach any location on bloch sphere?
+9 what is th T and R8 gates?
+
+a
+v unitary transformations
+1 	apply H to get to |+> v |->
+	apply S to get to |mu> v |nu>
+vi universal gate set
+2 gates that together enable getting to any quantum state
+3 not
+4 not, and
+5 no
+6 how to get to any point on a sphere: 2 phase; 2 coefficients
+7 Z: vertical axis, X: horizontal axis
+8 R_x = [[cos(theta/2), -i*sin(theta/2)],[-i*sin(theta/2), cos(theta/2)]], R_phi = [[1, 0], [0, e^(i*phi/2)]
+9 T = Z^(1/4); R8 = Z^(1/8)
