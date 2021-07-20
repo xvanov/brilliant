@@ -10,6 +10,7 @@ ii spin systems
 7 represent energy of single spin under global neighborhood
 8 constraint on spins and outcome
 9 how to solve for the correct spin configuration
+10 how are quantum spins different than classical spins 
 
 c
 i inspired by nature
@@ -23,3 +24,4 @@ ii spin systems
 7 derive expression
 8 three expressions together and their outcome
 9 try every possibility
+10 they can occupy continuous values between 0 and 1 leading to a continous landscape, however when finding a local minimum you are guaranteed to be at a global minimum

@@ -1,14 +1,6 @@
-34-0-27-5 T-Honos
 big q
 1 what is the nature of quantum computing
 2 why do scientists think qc will lead to speedups in variou sproblems: why will quantum computing upend codebraking, drug discovery, ml?
-
-big a
-1 use normal computer to pose problem and retrieve answers, but send problem to quntum world where you take advantage of things being simultaneously in different states to solve problem in parallel (by exploring multiple possibilities at once)
-2 - speedups: because you can explore multiple possibilites at once 
-- codebraking: because of being able to solve prime number factorization using shor's algorihtm
-- drug discovery: ?
-- machine learning: more raw processing?
 
 q
 1 what is pachinko/plinko/galton board? what state is most likely?
@@ -16,6 +8,13 @@ q
 3 how to predict end state of qunatum obect
 4 to calculate interference between 2 photons it takes t seconds. how long to calulate the photon distribution in a 3-layer quantum game of plinko? 
 5 what advantage to building a photon plinko over computing it?
+
+big a
+1 use normal computer to pose problem and retrieve answers, but send problem to quntum world where you take advantage of things being simultaneously in different states to solve problem in parallel (by exploring multiple possibilities at once)
+2 - speedups: because you can explore multiple possibilites at once 
+- codebraking: because of being able to solve prime number factorization using shor's algorihtm
+- drug discovery: ?
+- machine learning: more raw processing?
 
 a
 1 game where you drop ball, and there are 3 buckets it can fall to by being deflected by obstacles, middle
