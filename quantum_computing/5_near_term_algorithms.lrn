@@ -11,6 +11,8 @@ ii spin systems
 8 constraint on spins and outcome
 9 how to solve for the correct spin configuration
 10 how are quantum spins different than classical spins 
+iii modeling quantum spins with q#
+11 how to get spin from 0/1 measurement
 
 c
 i inspired by nature
@@ -25,3 +27,5 @@ ii spin systems
 8 three expressions together and their outcome
 9 try every possibility
 10 they can occupy continuous values between 0 and 1 leading to a continous landscape, however when finding a local minimum you are guaranteed to be at a global minimum
+iii modeling quantum spins with q#
+11 2m - 1
