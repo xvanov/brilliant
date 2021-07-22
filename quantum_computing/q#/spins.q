@@ -6,7 +6,10 @@ open Microsoft.Quantum.Convert;
 operation QuantumMain() : Unit {
 	using ( q = Qubit() ) { 
             // The state of q begins as |0>
-            // Measure the qubit
+            // X(q);
+	    let theta = PI()/2.0;
+	    Rx(theta, q);
+	    // Measure the qubit
             let result = M(q);
             // Convert this measurement result into a 0/1 integer.
             let m = ResultArrayAsInt([result]);
