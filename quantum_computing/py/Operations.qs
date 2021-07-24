@@ -5,13 +5,16 @@ namespace Brilliant {
     open Microsoft.Quantum.Convert;
 
     operation QuantumMain() : Unit {
-        // Define a rotation parameter and number of iterations
-        let theta = 5.0*PI()/6.0;
-        let iterations = 100;
+        // Run SpinOperation(), providing an angle and number of iterations
+        let spin = SpinOperation(PI()/2.0, 1000);
+        Message($"Average spin: {spin}");
+    }
+    
+    operation SpinOperation(theta : Double, iterations : Int) : Double {
         mutable n = 0;
         using ( q = Qubit() ) {
             // Allocate a qubit which begins in the |0> state
-            for (i in 1..iterations) {
+            for (i in 1..iterations) { 
                 // Rotate the state of qubit q by theta radians
                 Rx(theta,q);
                 // Measure the qubit
@@ -20,15 +23,13 @@ namespace Brilliant {
                 let m = ResultArrayAsInt([result]);
                 // Transform the result int into spin value
                 let s = 2 * m - 1;
-                set n = n + s;
-                // Return the spin  as a console message
-                Message($"Spin: {s}");
+                // Add the spin value to n to keep track
+                set n += s;
                 // Reset all the qubits to the |0> state
                 Reset(q);
             }   
-            mutable a = IntAsDouble(n)/IntAsDouble(iterations);
-            Message($"Average spin: {a}");
         }
-        // Add the averaging code here after the iterations have finished.
+        let average = IntAsDouble(n)/IntAsDouble(iterations);
+        return average;
     }
 }

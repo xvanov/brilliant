@@ -1,9 +1,9 @@
 import qsharp
-from Brilliant.Quantum.Operations import SpinOperation
+from Brilliant import SpinOperation
 
 # Define the angle theta and the number of iterations
 angle = 1.57
-num_iter = 1000
+num_iter = 10000
 
 # Run SpinOperation, providing the inputs above.
 spin = SpinOperation.simulate(theta = angle, iterations = num_iter)
