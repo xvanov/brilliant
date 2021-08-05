@@ -13,8 +13,10 @@ ii spin systems
 10 how are quantum spins different than classical spins 
 iii modeling quantum spins with q#
 11 how to get spin from 0/1 measurement
-v knapsack proble
+v knapsack problem
 12 how to represent the knapsack problem 
+vi knapsack problem in q#
+13 how many quantum variables to represent the knapsack energy model 
 
 c
 i inspired by nature
@@ -33,3 +35,5 @@ iii modeling quantum spins with q#
 11 2m - 1
 v knapsack problem
 12 3 terms
+vi knapsakc problem in q#
+13 5
