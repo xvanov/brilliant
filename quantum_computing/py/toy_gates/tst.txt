@@ -1,0 +1,15 @@
+ let nQubits = Length(parameters);
+        mutable resultM = Int[nQubits];
+        using ( q = Qubit[nQubits] ) {
+                for (iter in 1..iterations) {
+                    Rx(parameters[0], q[0]);
+                    CNOT(q[0], q[1]);
+                    for ( i in 0..nQubits ) {
+                        let m = ResultArrayAsInt(q[i]);
+                        set resultM w/= i <- m;
+                    }
+                    ResetAll(q);
+                }
+        }
+        Message($"Result: {resultM[0]}");
+

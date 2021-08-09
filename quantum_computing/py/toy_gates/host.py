@@ -1,7 +1,6 @@
 import qsharp
-from Qrng import SampleQuantumRandomNumberGenerator
-
-parameter = [1,0,0]
+from Qrng import BasicCircuit
+parameters = [1.0,0.0,0.0]
 N = 100
-#print(QCircuit.simulate(parameter=parameter, iterations=N))
-print(SampleQuantumRandomNumberGenerator.simulate())
+#print(SampleQuantumRandomNumberGenerator.simulate())
+print(BasicCircuit.simulate(parameters=parameters, iterations=N))

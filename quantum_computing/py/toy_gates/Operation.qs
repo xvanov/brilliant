@@ -12,5 +12,24 @@ namespace Qrng {
         Reset(q);
         return r;
     }
-    
+
+    operation BasicCircuit(parameters : Double[], iterations : Int) : Double {
+	let nQubits = Length(parameters);
+	mutable resultM = new Int[nQubits];
+	using ( q = Qubit[nQubits] ) {
+                for (iter in 1..iterations) {
+                    Rx(parameters[0], q[0]);
+                    CNOT(q[0], q[1]);
+                    for ( i in 0..nQubits ) {
+			let result = M(q[i]);
+                        let m = ResultArrayAsInt([result]);
+                        Message($"{m}");
+			set resultM w/= i <- m;
+                    }
+        	    Message($"Result: {resultM}");
+                    ResetAll(q);
+                }
+        }
+	return 1.0; 
+}
 }
