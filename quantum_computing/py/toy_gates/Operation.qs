@@ -15,21 +15,30 @@ namespace Qrng {
 
     operation BasicCircuit(parameters : Double[], iterations : Int) : Double {
 	let nQubits = Length(parameters);
-	mutable resultM = new Int[nQubits];
+	mutable s = new Int[nQubits];
+	mutable s1 = 0;
+	mutable s2 = 0;
+	mutable s3 = 0;
 	using ( q = Qubit[nQubits] ) {
                 for (iter in 1..iterations) {
+
                     Rx(parameters[0], q[0]);
                     CNOT(q[0], q[1]);
-                    for ( i in 0..nQubits ) {
+		    CNOT(q[1], q[2]);
+
+                    for ( i in 0..nQubits-1 ) {
 			let result = M(q[i]);
                         let m = ResultArrayAsInt([result]);
-                        Message($"{m}");
-			set resultM w/= i <- m;
+			set s w/= i <- m;
                     }
-        	    Message($"Result: {resultM}");
+
+		    set s1 = s1 + s[0];
+		    set s2 = s2 + s[1];
+		    set s3 = s3 + s[2];
                     ResetAll(q);
                 }
         }
-	return 1.0; 
+	let as1 = IntAsDouble(s1)/IntAsDouble(iterations);
+	return as1; 
 }
 }
